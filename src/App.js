@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React  from 'react';
+import { Switch, Route } from 'react-router-dom';
+import { PageHeader } from 'react-bootstrap';
+
+import Main from './containers/Main/Main';
+import Albums from './containers/Albums/Albums';
+import AlbumsInfo from './containers/AlbumsInfo/AlbumsInfo';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+      <div className="app-main-page">
+        <div className="page-header">
+          <PageHeader>Find Music by Artist</PageHeader>
+        </div>
+        <Switch>
+          <Route path='/artist/' component={Albums} />
+          <Route path='/album/' component={AlbumsInfo} />
+          <Route path='/' component={Main} />
+        </Switch>
+      </div>
+    )
+  }
 
 export default App;

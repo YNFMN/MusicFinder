@@ -1,0 +1,57 @@
+.container {
+    width: 800px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    border: 7px solid #FEFCFF;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.container--albums {
+    padding: 0px;
+}
+
+.albums__albums {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-top: 13px;
+}
+
+.albums__cont {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button__albums {
+    display: flex;
+    margin: auto;
+    background-color: #FEFCFF;
+}
+
+.button__albums:active,
+.button__albums:focus {
+    border-color: rgb(216, 181, 221);
+    box-shadow: 0 0 0 0.2rem rgba(233,207,236,.65);
+    background-color: #FEFCFF;
+}
+
+.spin {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.errorText {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 27px;
+}

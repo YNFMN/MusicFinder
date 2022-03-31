@@ -1,0 +1,9 @@
+.main {
+    background-color: #FEFCFF;
+    width: 800px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    border: 7px solid #FEFCFF;
+    margin-top: 20px;
+}
